@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="kk" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta_home">BarberPro</title>
+  <meta name="description" content="BarberPro — barbershop, Astana. Барбершоп / Барбершоп / Barbershop.">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{var d=document.documentElement;d.classList.add('js');var t=localStorage.getItem('bp_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');d.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="36" height="36">
+        <span>BarberPro</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-aria="menu_toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page" data-i18n="nav_home">Home</a></li>
+          <li><a href="index.html#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="index.html#barbers" data-i18n="nav_barbers">Barbers</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="nav-tools">
+          <div class="lang-switch" role="group" data-i18n-aria="lang_label">
+            <button type="button" data-lang="kk">KZ</button>
+            <button type="button" data-lang="ru">RU</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+          <button class="theme-switch" id="theme-toggle" type="button" role="switch" aria-checked="false" data-i18n-aria="theme_toggle">
+            <span class="knob"><span class="icon-sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span class="icon-moon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></span></span>
+          </button>
+          <div class="auth-links">
+            <span data-auth="guest" class="auth-links">
+              <a class="btn btn-ghost btn-sm" href="login.html" data-i18n="nav_login">Log in</a>
+              <a class="btn btn-primary btn-sm" href="signup.html" data-i18n="nav_signup">Sign up</a>
+            </span>
+            <span data-auth="user" class="auth-links" hidden>
+              <a class="btn btn-outline btn-sm" href="profile.html" data-i18n="nav_profile">Profile</a>
+              <button class="btn btn-ghost btn-sm" type="button" data-action="logout" data-i18n="nav_logout">Log out</button>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="eyebrow" data-i18n="hero_badge">A barbershop for men</span>
+          <h1 data-i18n="hero_title">Sharp style. Precise craft.</h1>
+          <p class="lead" data-i18n="hero_text">Professional barbers, quality tools and easy online booking.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span data-i18n="hero_cta_book">Book a visit</span></a>
+            <a class="btn btn-outline" href="#services" data-i18n="hero_cta_more">See prices</a>
+          </div>
+          <div class="stats">
+            <div class="stat reveal"><strong data-count="8" data-suffix="+">8+</strong><span data-i18n="stat_years">years</span></div>
+            <div class="stat reveal"><strong data-count="5000" data-suffix="+">5000+</strong><span data-i18n="stat_clients">clients</span></div>
+            <div class="stat reveal"><strong data-count="3">3</strong><span data-i18n="stat_barbers">barbers</span></div>
+          </div>
+        </div>
+        <div class="hero-art"><img src="images/hero.svg" width="600" height="600" data-i18n-alt="hero_img_alt" alt="Barber pole and scissors"></div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="why_title">Why BarberPro?</h2>
+          <p data-i18n="why_sub">We give every guest personal attention.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div><h3 data-i18n="why1_t">Professional barbers</h3><p data-i18n="why1_d"></p></article>
+          <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div><h3 data-i18n="why2_t">Clean tools</h3><p data-i18n="why2_d"></p></article>
+          <article class="card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><h3 data-i18n="why3_t">Online booking</h3><p data-i18n="why3_d"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services: search + filter -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="services_title">Services and prices</h2>
+          <p data-i18n="services_sub">Search for a service or filter by category.</p>
+        </div>
+        <div class="toolbar">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <label class="sr-only" for="service-search" style="position:absolute;left:-9999px" data-i18n="search_label">Search services</label>
+            <input id="service-search" type="text" autocomplete="off" data-i18n-ph="search_ph" placeholder="Search...">
+          </div>
+          <div class="chips" role="group" data-i18n-aria="filter_group">
+            <button class="chip" type="button" data-cat="all" aria-pressed="true" data-i18n="filter_all">All</button>
+            <button class="chip" type="button" data-cat="hair" aria-pressed="false" data-i18n="filter_hair">Hair</button>
+            <button class="chip" type="button" data-cat="beard" aria-pressed="false" data-i18n="filter_beard">Beard</button>
+            <button class="chip" type="button" data-cat="care" aria-pressed="false" data-i18n="filter_care">Care</button>
+            <button class="chip" type="button" data-cat="combo" aria-pressed="false" data-i18n="filter_combo">Combo</button>
+          </div>
+        </div>
+        <div class="results-bar">
+          <span id="results-count" aria-live="polite"></span>
+          <button class="btn btn-ghost btn-sm" type="button" id="clear-filters" hidden data-i18n="clear_filters">Clear filter</button>
+        </div>
+        <div class="grid grid-3" id="services-grid"></div>
+        <div class="empty-state" id="empty-state" hidden data-i18n="no_results">Nothing found.</div>
+      </div>
+    </section>
+
+    <!-- Barbers -->
+    <section class="section section-alt" id="barbers">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="barbers_title">Our barbers</h2>
+          <p data-i18n="barbers_sub">Each one has a specialty of their own.</p>
+        </div>
+        <div class="grid grid-3">
+        <article class="card barber-card reveal">
+          <div class="img-wrap"><img src="images/barber-arman.svg" width="400" height="400" loading="lazy" data-i18n-alt="barber_alt" data-name="Arman" alt="Arman"></div>
+          <h3>Arman</h3>
+          <p class="role" data-i18n="role_senior">Senior barber</p>
+          <p class="exp" data-i18n="exp_years" data-i18n-vars='{"n":8}'>8 years</p>
+        </article>
+        <article class="card barber-card reveal">
+          <div class="img-wrap"><img src="images/barber-dias.svg" width="400" height="400" loading="lazy" data-i18n-alt="barber_alt" data-name="Dias" alt="Dias"></div>
+          <h3>Dias</h3>
+          <p class="role" data-i18n="role_fade">Fade specialist</p>
+          <p class="exp" data-i18n="exp_years" data-i18n-vars='{"n":5}'>5 years</p>
+        </article>
+        <article class="card barber-card reveal">
+          <div class="img-wrap"><img src="images/barber-timur.svg" width="400" height="400" loading="lazy" data-i18n-alt="barber_alt" data-name="Timur" alt="Timur"></div>
+          <h3>Timur</h3>
+          <p class="role" data-i18n="role_beard">Beard specialist</p>
+          <p class="exp" data-i18n="exp_years" data-i18n-vars='{"n":6}'>6 years</p>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weather: Open-Meteo API -->
+    <section class="section" id="weather">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 data-i18n="weather_title">Today's weather</h2>
+          <p data-i18n="weather_sub">Check the weather before your visit.</p>
+        </div>
+        <div class="card weather-card reveal">
+          <div class="weather-controls">
+            <label for="weather-city" data-i18n="weather_city">City</label>
+            <select id="weather-city">
+              <option value="astana" data-i18n="city_astana">Astana</option>
+              <option value="almaty" data-i18n="city_almaty">Almaty</option>
+              <option value="shymkent" data-i18n="city_shymkent">Shymkent</option>
+            </select>
+          </div>
+          <div id="weather-output" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 data-i18n="cta_title">Ready for a new look?</h2>
+          <p data-i18n="cta_text">Sign up and book a convenient time.</p>
+          <a class="btn btn-primary" href="signup.html" data-auth="guest" data-i18n="cta_btn">Sign up</a>
+          <a class="btn btn-primary" href="#services" data-auth="user" hidden data-i18n="hero_cta_book">Book a visit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking dialog (opened from a service card) -->
+    <dialog id="booking-dialog" aria-labelledby="booking-title">
+      <h2 id="booking-title" style="font-size:1.4rem"></h2>
+      <form id="booking-form" novalidate>
+        <div class="field">
+          <label for="bk-barber" data-i18n="book_barber">Barber</label>
+          <select id="bk-barber" name="barber" data-rules="required" aria-describedby="bk-barber-error"></select>
+          <p class="error" id="bk-barber-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="bk-date" data-i18n="book_date">Date</label>
+          <input id="bk-date" name="date" type="date" data-rules="required futureDate" aria-describedby="bk-date-error">
+          <p class="error" id="bk-date-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="bk-time" data-i18n="book_time">Time</label>
+          <select id="bk-time" name="time" data-rules="required" aria-describedby="bk-time-error"></select>
+          <p class="error" id="bk-time-error" role="alert"></p>
+        </div>
+        <div class="dialog-actions">
+          <button class="btn btn-outline" type="button" id="booking-close" data-i18n="book_close">Close</button>
+          <button class="btn btn-primary" type="submit" data-i18n="book_confirm">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="36" height="36"><span>BarberPro</span></a>
+          <p data-i18n="footer_tagline">A modern barbershop for men.</p>
+        </div>
+        <div>
+          <h3 data-i18n="footer_links">Pages</h3>
+          <ul>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="nav_contact">Contact</h3>
+          <ul>
+            <li data-i18n="footer_address">Astana</li>
+            <li><a href="tel:+77010000000">+7 701 000 00 00</a></li>
+            <li data-i18n="footer_hours">Daily 10:00 – 21:00</li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright" data-i18n="footer_rights">© 2026 BarberPro. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

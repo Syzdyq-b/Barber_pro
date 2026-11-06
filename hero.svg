@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b2825"/><stop offset="1" stop-color="#121110"/></linearGradient>
+    <clipPath id="pole"><rect x="255" y="110" width="90" height="360" rx="45"/></clipPath>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <circle cx="300" cy="300" r="230" fill="none" stroke="#d4af37" stroke-width="3" opacity=".5"/>
+  <circle cx="300" cy="300" r="190" fill="none" stroke="#d4af37" stroke-width="1.5" opacity=".35"/>
+  <rect x="255" y="110" width="90" height="360" rx="45" fill="#f5f1e8"/>
+  <g clip-path="url(#pole)" stroke-width="34">
+    <path d="M230 150 370 100" stroke="#c0392b"/><path d="M230 230 370 180" stroke="#2c5aa0"/>
+    <path d="M230 310 370 260" stroke="#c0392b"/><path d="M230 390 370 340" stroke="#2c5aa0"/>
+    <path d="M230 470 370 420" stroke="#c0392b"/>
+  </g>
+  <rect x="245" y="90" width="110" height="34" rx="17" fill="#d4af37"/>
+  <rect x="245" y="456" width="110" height="34" rx="17" fill="#d4af37"/>
+  <g transform="translate(150 470) rotate(-35)" fill="none" stroke="#d4af37" stroke-width="9" stroke-linecap="round">
+    <circle cx="-18" cy="40" r="22"/><circle cx="18" cy="40" r="22"/>
+    <path d="M-12 20 40 -90M12 20 -40 -90" />
+  </g>
+  <g transform="translate(470 440) rotate(40)">
+    <rect x="-70" y="-14" width="140" height="28" rx="6" fill="#d9d2c4"/>
+    <rect x="-70" y="-14" width="90" height="28" rx="6" fill="#b9b2a3"/>
+    <rect x="20" y="-18" width="50" height="36" rx="8" fill="#d4af37"/>
+  </g>
+</svg>
